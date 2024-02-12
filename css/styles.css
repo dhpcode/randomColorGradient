@@ -8,19 +8,25 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  color: white;
+  margin: 0;
 }
 
 body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
 img {
@@ -90,3 +96,30 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {}
+
+.title {
+  margin: 0;
+  font-weight: 500;
+}
+
+.wrapper {
+  background-color: rgba(204, 204, 204, 0.5);
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0, 5s;
+  margin-bottom: 25px;
+}
+
+.wrapper:hover {
+  box-shadow: -1px -1px 11px 4px rgba(219, 192, 192, 0.75);
+  -webkit-box-shadow: -1px -1px 11px 4px rgba(219, 192, 192, 0.75);
+  -moz-box-shadow: -1px -1px 11px 4px rgba(219, 192, 192, 0.75);
+  transform: scale(1.001);
+}
+
+.copyright {
+  position: absolute;
+  bottom: 50px;
+}
